@@ -1,0 +1,696 @@
+:root {
+    --red-color: #d50000;
+    --blue-color: #01579b;
+    --paragraph: hsl(228, 39%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+}
+
+
+/* NAVIGATION STARTS HERE */
+
+.navigation {
+    position: relative;
+}
+
+.logo {
+    width: 180px;
+    margin-top: -30px;
+}
+
+.motto {
+    font-family: 'Calibre';
+    font-size: 14px;
+    color: var(--blue-color);
+    margin-top: -40px;
+    margin-left: 33px;
+    padding-top: 3px;
+}
+
+.motto-span {
+    color: var(--red-color);
+    font-weight: bold;
+}
+
+.menu {
+    margin-top: -60px;
+    position: absolute;
+    right: 5%;
+    outline: none;
+    border: none;
+}
+
+.menu.active {
+    content: url(/images/icon-close.svg);
+    position: absolute;
+    right: 5%;
+    outline: none;
+    border: none;
+}
+
+.menu-toggler {
+    width: 35px;
+}
+
+.nav-links {
+    display: none;
+}
+
+.mobile-nav-links {
+    display: none;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'calibre';
+    background: #ddd;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.active {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.mobile-nav-links a {
+    text-decoration: none;
+    display: block;
+    padding-top: 40px;
+    font-size: 22px;
+    color: var(--blue-color);
+    transition: .3s ease-in;
+}
+
+
+/* NAVIGATION ENDS HERE */
+
+
+/* THE MAIN SECTION STARTS HERE */
+
+.main-content {
+    font-family: 'calibre', sans-serif;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.heading {
+    margin: 20px 0 10px 0;
+    color: var(--blue-color);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: .4px;
+}
+
+.heading:after {
+    content: "";
+    display: block;
+    width: 280px;
+    margin-top: -7px;
+    border-bottom: 2px solid var(--red-color);
+}
+
+.intro-img {
+    display: block;
+    width: 100%;
+}
+
+.hub-info {
+    color: var(--paragraph);
+    line-height: 1.56;
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.sub-heading {
+    margin-top: 10px;
+    color: var(--blue-color);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: .4px;
+    text-transform: capitalize;
+    transition: .5s ease-in-out;
+}
+
+.sub-heading:after {
+    content: "";
+    display: block;
+    width: 230px;
+    margin-top: -6px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid var(--red-color);
+}
+
+.sub-heading-mission:after {
+    width: 250px;
+}
+
+.sub-heading-who:after {
+    width: 200px;
+}
+
+.sub-heading-product:after {
+    width: 120px;
+}
+
+.why:after {
+    content: "";
+    display: block;
+    width: 320px;
+    border-bottom: 2px solid var(--red-color);
+}
+
+.why-img {
+    display: none;
+}
+
+.subhead {
+    background-color: #fff;
+    color: var(--blue-color);
+    font-weight: 500;
+    padding: 5px 2px 4px 2px;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 25px;
+    transition: .2s;
+    border-radius: 25px;
+    border: 1px solid rgb(245, 73, 73);
+}
+
+.first-benefit {
+    margin-top: 20px;
+}
+
+.subhead span {
+    background-color: #fff;
+    border-radius: 25px;
+    color: var(--red-color);
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: -20px;
+    margin-right: 10px;
+    padding: 13px 25px 11px 25px;
+    border: 1px solid rgb(245, 73, 73);
+}
+
+.subhead .d-none {
+    display: none;
+}
+
+.subhead-text {
+    color: var(--paragraph);
+    line-height: 1.56;
+    font-weight: 400;
+    padding: 10px 20px 0 20px;
+    font-size: 22px;
+    transition: .3s;
+}
+
+.about2,
+.flexible2,
+.product2 {
+    display: none;
+}
+
+
+/* THE MAIN SECTION ENDS HERE */
+
+
+/* THE FOOTER SECTION BEGINS HERE */
+
+footer {
+    margin-top: 50px;
+    padding: 0 20px;
+    padding-bottom: 10px;
+    background-color: var(--blue-color);
+    font-family: 'calibre', sans-serif;
+    text-align: center;
+}
+
+.contact-us {
+    padding-top: 20px;
+}
+
+.contact-us p {
+    margin-top: 7px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(221, 203, 203);
+}
+
+.contact-us a {
+    margin-top: 7px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(221, 203, 203);
+}
+
+.contact-us .mail {
+    margin-top: 7px;
+    font-size: 1.1rem;
+    margin-right: 2px;
+    font-weight: 600;
+    color: rgb(221, 203, 203);
+}
+
+.social i:hover {
+    color: rgb(240, 146, 146);
+}
+
+.main-footer a {
+    text-decoration: none;
+}
+
+.social i {
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: rgb(221, 203, 203);
+}
+
+.about-whipfix {
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.about-whipfix p {
+    display: block;
+    color: rgb(221, 203, 203);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+footer small {
+    display: block;
+    margin-top: 30px;
+    color: rgb(221, 203, 203);
+    font-size: 18px;
+}
+
+.footer-about {
+    color: rgb(240, 146, 146);
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.footer-contact-us {
+    color: rgb(240, 146, 146);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.footer-social {
+    color: rgb(240, 146, 146);
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+
+/* RESPONSIVE DESIGN BEGINS */
+
+@media screen and (min-width:500px) and (max-width:655px) {
+    .logo {
+        margin-left: 20px;
+    }
+    .motto {
+        margin-left: 70px;
+    }
+    .menu {
+        padding-right: 22px;
+    }
+    .main-content {
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+    .subhead .d-none {
+        display: inline-block;
+    }
+    .about-whipfix p {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (min-width:656px) and (max-width:767px) {
+    .logo {
+        margin-left: 50px;
+    }
+    .motto {
+        margin-left: 100px;
+    }
+    .menu {
+        padding-right: 50px;
+    }
+    .main-content {
+        margin: 0 auto;
+        padding: 0 80px;
+    }
+    .about-whipfix p {
+        padding: 0 80px;
+    }
+    .subhead .d-none {
+        display: inline-block;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .nav-links a {
+        text-decoration: none;
+        display: block;
+        padding-top: 20px;
+        font-size: 20px;
+        color: var(--blue-color);
+        transition: .3s ease-in;
+    }
+    .mobile-nav-links {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .nav-links {
+        display: block;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'calibre';
+        width: auto;
+        background: transparent;
+    }
+    .nav-links a {
+        display: inline-block;
+        padding-right: 15px;
+    }
+    .nav-links a:hover {
+        text-decoration: none;
+        color: var(--red-color);
+        transition: .4s ease;
+    }
+    .nav-links a:not(:first-child):hover:after {
+        content: "";
+        border-bottom: 1px solid var(--red-color);
+        display: block;
+        margin: 0 auto;
+        padding-top: 5px;
+    }
+    .current {
+        /* color: var(--red-color); */
+        /* border-bottom: 1px solid var(--red-color); */
+        padding-bottom: 5px;
+        border-bottom: red;
+    }
+    .main-content {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .about,
+    .flexible,
+    .product {
+        display: none;
+    }
+    .about2,
+    .flexible2,
+    .product2 {
+        display: flex;
+    }
+    .about-img {
+        padding: 0 0 0 30px;
+    }
+    .mission {
+        flex-direction: row-reverse;
+        margin-top: 30px;
+        align-items: center;
+    }
+    .content-img {
+        padding: 0 30px 0 0;
+    }
+    .intro-img {
+        width: 300px;
+        height: 200px;
+    }
+    .target {
+        margin-top: 30px;
+        align-items: center;
+    }
+    .target-info {
+        padding-right: 25px;
+    }
+    .product2 {
+        flex-direction: row-reverse;
+        margin-top: 30px;
+        align-items: center;
+    }
+    .last-flexible {
+        display: flex;
+    }
+    .last-flexible h2 {
+        padding-top: 28px;
+    }
+    .benefits {
+        padding: 20px 20px 20px 0px;
+    }
+    .subhead .d-none {
+        display: inline-block;
+        font-size: 25px;
+    }
+    .about-whipfix {
+        width: 700px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .main-footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .contact-us {
+        width: 300px;
+    }
+    .about-whipfix {
+        width: 300px;
+    }
+    .about-whipfix h4 {
+        margin-top: 25px;
+    }
+    .social {
+        padding-right: 0px;
+        width: 200px;
+    }
+    .social i {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .benefits {
+        padding-left: 30px;
+        padding-right: 60px;
+    }
+    .about-whipfix {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navigation,
+    .main-content {
+        padding: 0 50px;
+    }
+    .about2 p {
+        padding-right: 50px;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    .intro-img {
+        width: 350px;
+        height: 250px;
+    }
+    .why-img {
+        display: inline-flex;
+        width: 400px;
+        margin-top: 0;
+    }
+    .benefits {
+        padding-left: 30px;
+    }
+    .about-whipfix {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navigation,
+    .main-content {
+        padding: 0px 80px;
+    }
+    .main-content {
+        padding-top: 20px;
+    }
+    .intro-img {
+        width: 450px;
+        height: 300px;
+    }
+    .nav-links a {
+        padding-right: 25px;
+    }
+    .flexible2 p {
+        padding-right: 50px;
+    }
+    .main-footer {
+        padding: 0 80px;
+    }
+    .product2 .hub-info {
+        padding-right: 130px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .navigation,
+    .main-content {
+        padding: 0 150px;
+    }
+    .logo {
+        width: 200px;
+    }
+    .motto {
+        font-size: 1rem;
+    }
+    .main-content {
+        padding-top: 30px;
+    }
+    .hub-info {
+        width: 700px;
+        padding-right: 200px;
+    }
+    .about2 p {
+        padding-right: 100px;
+    }
+    .intro-img {
+        width: 400px !important;
+        height: 250px !important;
+    }
+    .why-img {
+        width: 550px;
+        height: 350px;
+    }
+    .mission {
+        align-items: flex-start;
+    }
+    .target {
+        align-items: flex-start;
+    }
+    .product2 {
+        align-items: flex-start;
+    }
+    .benefits {
+        margin-left: -100px;
+    }
+    .main-footer {
+        padding: 10px 100px 0 100px;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .intro-img {
+        width: 450px;
+        height: 250px;
+    }
+    .about2 p {
+        padding-right: 120px;
+    }
+    .flexible2 p {
+        padding-right: 80px;
+    }
+    .product2 p {
+        padding-right: 100px;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .navigation,
+    .main-content {
+        padding: 0 200px;
+    }
+    .main-content {
+        padding-top: 40px;
+    }
+    .about2 p {
+        padding-right: 150px;
+    }
+    .hub-info {
+        margin-right: 200px;
+    }
+    .mission-info,
+    .product-info {
+        margin-left: 100px;
+    }
+    .main-footer {
+        padding: 0 300px;
+    }
+    .about-whipfix {
+        padding: 5px 200px 0 200px;
+    }
+}
+
+@media screen and (min-width:3840px) {
+    .navigation,
+    .main-content {
+        padding: 0 1000px;
+    }
+    .nav-links a {
+        padding-right: 100px;
+    }
+    .main-content {
+        padding-top: 20px;
+    }
+    .intro-img {
+        width: 700px;
+        height: 350px;
+    }
+    .last-flexible {
+        padding-top: 50px
+    }
+    .benefits {
+        padding-right: 200px;
+    }
+    .benefits p {
+        padding-left: 50px;
+    }
+    .main-footer {
+        padding: 10px 1000px;
+    }
+    .contact-us {
+        padding-left: 200px;
+    }
+    .about-whipfix {
+        padding-left: 500px;
+    }
+}

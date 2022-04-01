@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red-color: #d50000;
+    --blue-color: #01579b;
+    --paragraph: hsl(228, 39%, 23%);
+}
+
+header {
+    background: url('./images/image10.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
+    position: relative;
+}
+
+.container {
+    margin: 2rem;
+    /* outline: red solid 1px; */
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #343a40;
+    height: 5rem;
+    margin-top: 0;
+}
+
+.nav-logo img {
+    width: 200px;
+    /* outline: red solid 1px; */
+    margin-top: -3.5rem;
+    padding-bottom: 0;
+    margin-left: 5rem;
+}
+
+.nav-list ul {
+    display: flex;
+    flex-direction: row;
+    /* outline: red solid 1px; */
+    list-style-type: none;
+    margin-top: 2rem;
+    margin-right: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+.nav-list li {
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+    color: #ffff;
+    /* outline: red solid 1px; */
+    cursor: pointer;
+}
+
+.nav-list li:hover {
+    color: #d50000;
+    text-decoration: underline blue;
+    text-underline-offset: 0.5rem;
+}
+
+.what-is-whipfix {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.what-is-whipfix img {
+    margin-top: 5rem;
+    width: 80%;
+    border-left: #d50000 solid 5px;
+    border-bottom: #d50000 solid 5px;
+    border-top-right-radius: 10px;
+}
+
+.what-is-whipfix-text {
+    margin-top: 10rem;
+    padding-left: 0;
+}
+
+.what-is-whipfix-text h2 {
+    font-weight: 700;
+    font-size: 5.25rem;
+    color: white;
+}
